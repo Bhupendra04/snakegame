@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-image: url("img/img1.webp");
+    min-height: 100vh;
+    background-size: 100wh 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgba(115, 117, 224,.5), rgba(114, 231, 91,.5));
+    width: 90vh;
+    height: 92vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(36,1fr);
+    grid-template-columns: repeat(36,1fr);
+}
+#scoreBox{
+    background: linear-gradient(rgb(149, 240, 75),rgb(248, 177, 129));
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#hiscoreBox{
+    background: linear-gradient(rgb(149, 240, 75),rgb(248, 177, 129));
+    position: absolute;
+    top: 59px;
+    left: 50px;
+    font-size: 39px;
+    font-weight: bold;
+}
+.head{
+    background: linear-gradient(red,rgb(79, 88, 202));
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+    background:linear-gradient(pink,rgb(79, 192, 158));
+    border-radius: .7rem;
+    border: .25vmin solid white;
+}
+.food{
+    background: linear-gradient(yellow,green);
+    border-radius: 1rem;
+    border: .25vmin solid black;
+}
